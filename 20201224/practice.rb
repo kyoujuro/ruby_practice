@@ -14,3 +14,17 @@ File.join(*dirs)
 #=> "usr/Desktop/practice"
 dirs.map &:length
 #=> [3, 7, 8]
+
+class Car
+  def color
+    p "red"
+  end
+end
+#=> :color
+class Bike < Car
+Bike.superclass
+#=> Car
+#bike = Bike.new
+
+irb(main):057:0> Bike.color
+

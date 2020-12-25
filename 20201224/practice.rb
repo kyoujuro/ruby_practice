@@ -23,7 +23,7 @@ end
 #=> :color
 class Bike < Car
 Bike.superclass
-#=> Car
+
 #bike = Bike.new
 
 irb(main):057:0> Bike.color

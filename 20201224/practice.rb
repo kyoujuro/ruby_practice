@@ -122,3 +122,19 @@ def circle(r, n)
     end
 end
 circle(1,100) {|x,y| printf "(%.2f, %.2f)", x, y}
+
+def sequence2(n, m, c)
+    i, s = 0, []
+    while(i < n)
+        y = m*i + c
+        yield y if block_given?
+        s << y
+        i += 1
+    end
+    s
+end
+
+sequence2(5,4,3) {|y| p y}
+
+s = "Hello World"
+s.enum_for(:each_char).map {|c| print c.succ}

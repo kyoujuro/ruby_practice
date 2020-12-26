@@ -66,3 +66,8 @@ sym = sym.to_s
 #=> "string"
 #Symbolの方がメモリが軽い
 #=> true
+
+(1..10) == 5
+#=> false
+(1..10) === 5
+#=> true

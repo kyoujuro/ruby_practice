@@ -26,5 +26,7 @@ Bike.superclass
 
 #bike = Bike.new
 
-irb(main):057:0> Bike.color
-
+words = %w[this is the test]
+#=> ["this", "is", "the", "test"]
+words = %q[this is the test]
+#=> "this is the test"

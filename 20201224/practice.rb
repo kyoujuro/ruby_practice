@@ -90,3 +90,35 @@ s.tainted?
 #=> true
 s[3,4].tainted?
 #=> true
+
+
+  
+array = [1,2,3,4,5]
+for element in array
+    puts element
+end
+
+hash = {:a=>1, :b=>2, :c=>3}
+for key, value in hash
+    puts "#{key} => #{value}"
+end
+
+4.upto(8) {|x| print x}
+
+def sequence(n, m, c)
+    i = 0
+    while(i < n)
+        yield m*i + c
+        i += 1
+    end
+end
+
+sequence(3,5,1) {|y| p y}
+
+def circle(r, n)
+    n.times do |i|
+        angle = Math::PI * 2 * i / n
+        yield r*Math.cos(angle), r*Math.sin(angle)
+    end
+end
+circle(1,100) {|x,y| printf "(%.2f, %.2f)", x, y}

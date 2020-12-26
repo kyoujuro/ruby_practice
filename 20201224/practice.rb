@@ -44,3 +44,6 @@ a = ('a'...'g').to_a
 #=> ["a", "b", "c", "d", "e", "f"]
 a = ('a'...'g').to_s
 #=> "a...g"
+
+test.include?1999
+#=> true

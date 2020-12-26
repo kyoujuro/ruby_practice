@@ -47,3 +47,13 @@ a = ('a'...'g').to_s
 
 test.include?1999
 #=> true
+
+
+words.cover? "AAA"
+#=> true
+words.cover? "AA"
+#=> false
+words.cover? "AAD"
+#=> true
+words.cover? "AAG"
+#=> true

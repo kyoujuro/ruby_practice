@@ -57,3 +57,12 @@ words.cover? "AAD"
 #=> true
 words.cover? "AAG"
 #=> true
+
+str = "string"
+#=> "string"
+sym = str.intern
+#=> :string
+sym = sym.to_s
+#=> "string"
+#Symbolの方がメモリが軽い
+#=> true

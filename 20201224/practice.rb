@@ -77,3 +77,16 @@ sym = sym.to_s
 #=> -1
 7 <=> 5
 #=> 1
+
+s = "untrusted"
+#=> "untrusted"
+s
+#=> "untrusted"
+s.taint
+#=> "untrusted"
+s
+#=> "untrusted"
+s.tainted?
+#=> true
+s[3,4].tainted?
+#=> true

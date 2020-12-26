@@ -30,3 +30,12 @@ words = %w[this is the test]
 #=> ["this", "is", "the", "test"]
 words = %q[this is the test]
 #=> "this is the test"
+
+empty = Array.new
+#=> []
+nils = Array.new(3)
+#=> [nil, nil, nil]
+test = Array.new(3, 1)
+#=> [1, 1, 1]
+count = Array.new(5) {|i| i+1}
+#=> [1, 2, 3, 4, 5]

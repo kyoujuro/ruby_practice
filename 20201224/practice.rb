@@ -138,3 +138,5 @@ sequence2(5,4,3) {|y| p y}
 
 s = "Hello World"
 s.enum_for(:each_char).map {|c| print c.succ}
+
+sequence(2,3,4) { |y| print y}
